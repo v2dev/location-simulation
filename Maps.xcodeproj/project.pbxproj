@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00DB77061FE0EDBC00ED6C3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00DB77051FE0EDBC00ED6C3B /* Assets.xcassets */; };
 		CA706936172A0BD900318AF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA706935172A0BD900318AF9 /* UIKit.framework */; };
 		CA706938172A0BD900318AF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA706937172A0BD900318AF9 /* Foundation.framework */; };
 		CA70693A172A0BD900318AF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA706939172A0BD900318AF9 /* CoreGraphics.framework */; };
@@ -39,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00DB77051FE0EDBC00ED6C3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA706932172A0BD900318AF9 /* V2 Location App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "V2 Location App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA706935172A0BD900318AF9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CA706937172A0BD900318AF9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -126,7 +124,6 @@
 		CA70693B172A0BD900318AF9 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				00DB77051FE0EDBC00ED6C3B /* Assets.xcassets */,
 				CA706944172A0BD900318AF9 /* BPXLAppDelegate.h */,
 				CA706945172A0BD900318AF9 /* BPXLAppDelegate.m */,
 				CA70694D172A0BD900318AF9 /* BPXLViewController.h */,
@@ -220,7 +217,8 @@
 				ORGANIZATIONNAME = Example;
 				TargetAttributes = {
 					CA706931172A0BD900318AF9 = {
-						DevelopmentTeam = 3W5V7HNT87;
+						DevelopmentTeam = 4G2KHJ47KE;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -251,7 +249,6 @@
 				CA706948172A0BD900318AF9 /* Default.png in Resources */,
 				CA70694A172A0BD900318AF9 /* Default@2x.png in Resources */,
 				CA70694C172A0BD900318AF9 /* Default-568h@2x.png in Resources */,
-				00DB77061FE0EDBC00ED6C3B /* Assets.xcassets in Resources */,
 				CA706952172A0BD900318AF9 /* BPXLViewController.xib in Resources */,
 				CA706971172A0BFF00318AF9 /* Testing.gpx in Resources */,
 			);
@@ -353,7 +350,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nitesh Meshram (6W9Q7X86UN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nitesh Meshram (6W9Q7X86UN)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -387,7 +385,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nitesh Meshram (6W9Q7X86UN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nitesh Meshram (6W9Q7X86UN)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -405,12 +404,17 @@
 		CA70696B172A0BD900318AF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 3W5V7HNT87;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nitesh Meshram (6W9Q7X86UN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nitesh Meshram (6W9Q7X86UN)";
+				DEVELOPMENT_TEAM = 4G2KHJ47KE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maps/Maps-Prefix.pch";
 				INFOPLIST_FILE = "Maps/Maps-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.v2solutions.Test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.v2solutions.LocationFinder;
 				PRODUCT_NAME = "V2 Location App";
+				PROVISIONING_PROFILE = "d941da71-8789-4443-af09-eefdf1883f0c";
+				PROVISIONING_PROFILE_SPECIFIER = "Location Finder Dev Profile";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -419,12 +423,17 @@
 		CA70696C172A0BD900318AF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 3W5V7HNT87;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nitesh Meshram (6W9Q7X86UN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nitesh Meshram (6W9Q7X86UN)";
+				DEVELOPMENT_TEAM = 4G2KHJ47KE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maps/Maps-Prefix.pch";
 				INFOPLIST_FILE = "Maps/Maps-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.v2solutions.Test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.v2solutions.LocationFinder;
 				PRODUCT_NAME = "V2 Location App";
+				PROVISIONING_PROFILE = "d941da71-8789-4443-af09-eefdf1883f0c";
+				PROVISIONING_PROFILE_SPECIFIER = "Location Finder Dev Profile";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
